@@ -1,15 +1,3 @@
-/*!
-  =========================================================
-  * Muse Ant Design Dashboard - v1.0.0
-  =========================================================
-  * Product Page: https://www.creative-tim.com/product/muse-ant-design-dashboard
-  * Copyright 2021 Creative Tim (https://www.creative-tim.com)
-  * Licensed under MIT (https://github.com/creativetimofficial/muse-ant-design-dashboard/blob/main/LICENSE.md)
-  * Coded by Creative Tim
-  =========================================================
-  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import React, { Component } from "react";
 import {
   Layout,
@@ -57,7 +45,7 @@ export default class SignIn extends Component {
     return (
       <>
         <Layout className="Form-layout layout-default">
-         
+
           <Content className="signin">
             <Row gutter={[24, 0]} justify="space-around">
               <Col
@@ -65,7 +53,7 @@ export default class SignIn extends Component {
                 lg={{ span: 7, offset: 2 }}
                 md={{ span: 12 }}
               >
-                
+
                 <Title className="mb-15">Ajouter une Blog</Title>
                 <Title className="font-regular text-muted" level={5}>
                   veuillez remplir ces champs pour ajouter un blog !
@@ -101,28 +89,29 @@ export default class SignIn extends Component {
                       },
                     ]}
                   >
-                    <textarea class="ant-input" cols="33" rows ="7" placeholder="Loreum ipseum ..." />
+                    <textarea class="ant-input" cols="33" rows="7" placeholder="Loreum ipseum ..." />
                   </Form.Item>
 
-                 
+
                   <Form.Item>
-                  <div className="uploadfile pb-15 shadow-none">
-                <Upload {...formProps}
-                 accept=".png"
-                 beforeUpload={(file)=>{
-                   console.log({file});
-                   return false;}}
-                   >
-                  <Button
-                    type="dashed"
-                    className="ant-full-box"
-                    icon={<ToTopOutlined />}
-                  >
-                    Click to Upload
-                  </Button>
-                </Upload>
-              </div>
-              </Form.Item>
+                    <div className="uploadfile pb-15 shadow-none">
+                      <Upload {...formProps}
+                        accept=".png"
+                        beforeUpload={(file) => {
+                          console.log({ file });
+                          return false;
+                        }}
+                      >
+                        <Button
+                          type="dashed"
+                          className="ant-full-box"
+                          icon={<ToTopOutlined />}
+                        >
+                          Click to Upload
+                        </Button>
+                      </Upload>
+                    </div>
+                  </Form.Item>
 
                   <Form.Item>
                     <Button
@@ -133,14 +122,14 @@ export default class SignIn extends Component {
                       AJOUTER
                     </Button>
                   </Form.Item>
-                 
+
                 </Form>
-                
+
               </Col>
-             
+
             </Row>
           </Content>
-          
+
         </Layout>
       </>
     );
